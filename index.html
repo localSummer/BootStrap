@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>项目实战--首页介绍内容[下]</title>
+	<title>项目实战</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -56,11 +56,6 @@
 					<img src="img/slide3.png" alt="第三张">
 				</a>
 			</div>
-			<!-- <div class="item active" style="background:#DE2A2D;">
-				<a href="#" title="">
-					<img src="img/slide.png" alt="第三张">
-				</a>
-			</div> -->
 		</div>
 		<a href="#myCarousel" data-slide="prev" class="carousel-control left">
 			<span class="glyphicon glyphicon-chevron-left f_z"></span>
@@ -165,7 +160,7 @@
 	<footer id="footer" class="text-muted">
 		<div class="container">
 			<p>企业培训 | 合作事宜 | 版权投诉</p>
-			<p>苏 ICP 备 12345678. © 2009-2016 瓢城企训网. Powered byBootstrap.</p>
+			<p>京 ICP 备 88888888. © 2010-2016 瓢城企训网. Powered byBootstrap.</p>
 		</div>
 	</footer>
 
@@ -174,26 +169,26 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-	//所需要的jQuery控制
-	$(function(){
-		$('#myCarousel').carousel({
-			interval:3000//自动播放3秒
-		});
+		//所需要的jQuery控制
+		$(function(){
+			$('#myCarousel').carousel({
+				interval:3000//自动播放3秒
+			});
 
-		/*js控制垂直居中*/
-		$(window).load(function() {
-			$('.text').eq(0).css('margin-top',($('.auto').eq(0).height()-$('.text').eq(0).height())/2 + 'px');
+			/*js控制垂直居中*/
+			$(window).load(function() {
+				$('.text').eq(0).css('margin-top',($('.auto').eq(0).height()-$('.text').eq(0).height())/2 + 'px');
+			});
+			$(window).resize(function(){
+				$('.text').eq(0).css('margin-top',($('.auto').eq(0).height()-$('.text').eq(0).height())/2 + 'px');
+			});
+			$(window).load(function(){
+				$('.text').eq(1).css('margin-top',($('.auto').eq(1).height()-$('.text').eq(1).height())/2 + 'px');
+			});
+			$(window).resize(function(){
+				$('.text').eq(1).css('margin-top',($('.auto').eq(1).height()-$('.text').eq(1).height())/2 + 'px');
+			});
 		});
-		$(window).resize(function(){
-			$('.text').eq(0).css('margin-top',($('.auto').eq(0).height()-$('.text').eq(0).height())/2 + 'px');
-		});
-		$(window).load(function(){
-			$('.text').eq(1).css('margin-top',($('.auto').eq(1).height()-$('.text').eq(1).height())/2 + 'px');
-		});
-		$(window).resize(function(){
-			$('.text').eq(1).css('margin-top',($('.auto').eq(1).height()-$('.text').eq(1).height())/2 + 'px');
-		});
-	});
 	</script>
 </body>
 </html>
